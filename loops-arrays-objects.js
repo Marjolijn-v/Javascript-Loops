@@ -103,14 +103,28 @@ const scores = [
 	{name: 'Otis', score: 100, salaryIncrease: null},
 ];
 
+// for (let i = 0; i < scores.length; i++) {
+//     if (scores[i].score < 60) {
+//         console.log("0%");
+//     } else if ((scores[i].score >= 60) && (scores[i].score < 70)) {
+//         console.log("2%");
+//     } else if ((scores[i].score >= 70) && (scores[i].score < 90)) {
+//         console.log("3%");
+//     } else if ((scores[i].score >= 90) && (scores[i].score < 100)) {
+//         console.log("4%");
+//     } else if (scores[i].score === 100) {
+//         console.log("6%");
+//     }
+// }
+
 for (let i = 0; i < scores.length; i++) {
     if (scores[i].score < 60) {
         console.log("0%");
-    } else if ((scores[i].score >= 60) && (scores[i].score < 70)) {
+    } else if (scores[i].score < 70) {
         console.log("2%");
-    } else if ((scores[i].score >= 70) && (scores[i].score < 90)) {
+    } else if (scores[i].score < 90) {
         console.log("3%");
-    } else if ((scores[i].score >= 90) && (scores[i].score < 100)) {
+    } else if (scores[i].score < 100) {
         console.log("4%");
     } else if (scores[i].score === 100) {
         console.log("6%");
@@ -168,11 +182,11 @@ console.log(scores);
 // ==========================================
 
 const employees = [
-	{firstName: 'Max', lastName: 'Janssen', email: null},
-	{firstName: 'Sophia', lastName: 'Vries', email: null},
-	{firstName: 'Ali', lastName: 'Bakir', email: null},
-	{firstName: 'Nina', lastName: 'Berg', email: null},
-	{firstName: 'Otis', lastName: 'Kuiper', email: null},
+	{firstName: 'Max', lastName: 'Janssen'},
+	{firstName: 'Sophia', lastName: 'Vries'},
+	{firstName: 'Ali', lastName: 'Bakir'},
+	{firstName: 'Nina', lastName: 'Berg'},
+	{firstName: 'Otis', lastName: 'Kuiper'},
 ];
 
 for (let i = 0; i < employees.length; i++) {
